@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasmine Öhlin</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/myt4xwc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-box" id="home-link">
+                <a href="index.html">JASMINE ÖHLIN</a>
+            </div>
+            <div class="nav-box" id="menu-btn-container">
+                <button class="icon-button" id="menu-btn" onclick="onMenuClick()"></button>
+            </div>
+            <div class="nav-box nav-hide">
+                <ul class="nav-ul">
+                    <li><a href="index.html#portfolio-section">PORTFOLIO</a> </li>
+                    <li><a href="index.html#about-section">ABOUT</a> </li>
+                    <li><a href="#footer-section">CONTACT</a> </li>
+                </ul>
+            </div>
+            <div class="nav-box nav-hide">
+                <ul class="nav-ul">
+                    <li><a href="https://www.linkedin.com/in/jasmine-%C3%B6hlin-712840209/" target="_blank">LINKEDIN</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="project-section">
+        <div class="project-content-container">
+            <div class="project-intro">
+                <h1>Web Crawler</h1>
+                <div class="project-info-container">
+                    <p class="project-info-text"><b>Team size:</b> Solo project</p>
+                    <p class="project-info-text"><b>Duration:</b> 3 weeks</p>
+                    <p class="project-info-text"><b>Softwares:</b> Jetbrains Rider, C# and Regex</p>
+                </div>
+                <p class="project-body-text"><b>Assignment:</b> Create a small browser that reads and retrieves information from a websites HTML and prints it in the IDE console using HTTP methods and a TCP client. This project was one of several TCP/UDP projects made during 3 weeks.</p>
+                <div class="project-contributions">
+                    <p class="project-body-text"><b>About</b><br>
+                        By using TCP and UDP this IDE application is used to pick out information from a websites HTML and display it neatly in the console. Added functionality was to navigate between links, visit them and retrieve information.
+                        <br><br>
+                        Apart from the demands for this assignment I also explored Regex to more efficently pick out information from the HTML document.</p>
+                </div>
+                <div class="project-images">
+                    <img src="images/portfolioprojects/webcrawler/acmevisitgif.gif">
+                    <img src="images/portfolioprojects/webcrawler/gettitlemethod.png">
+                    <img src="images/portfolioprojects/webcrawler/httprequest.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="similar-projects-section">
+        <div class="project-content-container">
+            <h1>Similar Projects</h1>
+            <div class="gallery-row">
+                <div class="gallery-column">
+                    <a href="github-explorer.html"><img class="project-image" src="images/portfolioprojects/githubexplorer/githubexplorercover.jpg" alt="portfolio-name-image"></a>
+                    
+                </div>
+                <div class="gallery-column">
+                    <a href="little-light.html"><img class="project-image" src="images/portfolioprojects/littlelight/littlelightcover.jpg" alt="portfolio-name-image"></a>
+                </div>
+                <div class="gallery-column">
+                    <a href="procedural-dungeon.html"><img class="project-image" src="images/portfolioprojects/proceduraldungeon/proceduraldungeoncover.jpg" alt="portfolio-name-image"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer-section">
+        <div class="section-content-container">
+            <div class="about-item">
+                <h1>Let's talk!</h1>
+                <p>Email me at
+                    <a href="mailto:jasmine.ohlin&#64;gmail&#46;com">
+                        jasmine.ohlin&#64;gmail&#46;com</a>, or feel free to reach out on LinkedIn.</p>
+                <div class="btn-container">
+                    <a href="images/personal/jasmine_ohlin.pdf" target="_blank"><button class="rounded-btn">View CV</button></a>
+
+                    <button class="intro-button" id="linkedin-button" onclick="window.open('https://www.linkedin.com/in/jasmine-%C3%B6hlin-712840209/')"></button>
+                </div>
+            </div>
+            <div class="about-item" id="footer-img-container">
+                <img src="images/personal/portrait.jpeg" alt="portrait">
+            </div>
+        </div>
+    </footer>
+</main>
+</body>
+</html>

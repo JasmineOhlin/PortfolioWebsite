@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasmine Öhlin</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/myt4xwc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <script src="js/main.js" defer></script>
+</head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="nav-box" id="home-link">
+                        <a href="index.html">JASMINE ÖHLIN</a>
+                    </div>
+                    <div class="nav-box" id="menu-btn-container">
+                        <button class="icon-button" id="menu-btn" onclick="onMenuClick()"></button>
+                    </div>
+                    <div class="nav-box nav-hide">
+                        <ul class="nav-ul">
+                            <li><a href="#portfolio-section">PORTFOLIO</a></li>
+                            <li><a href="#about-section">ABOUT</a> </li>
+                            <li><a href="#about-section">CONTACT</a> </li>
+                        </ul>
+                    </div>
+                    <div class="nav-box nav-hide">
+                        <ul class="nav-ul">
+                            <li><a href="https://www.linkedin.com/in/jasmine-%C3%B6hlin-712840209/" target="_blank">LINKEDIN</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <main>
+        <section class="intro-section">
+            <div class="section-content-container" id="intro-container">
+                <div class="section-item">
+                    <h1>Hi, are you looking for a game programming intern?</h1>
+                    <p class="intro-text">My name is Jasmine Öhlin,<br> I’m a game programming student currently looking for LIA starting in January 2023.</p>
+                </div>
+                <div class="section-item" id="portrait-picture-container">
+                    <img src="images/personal/portrait.jpeg" alt="portrait" id="portrait-image">
+                </div>
+
+            </div>
+        </section>
+        <section class="portfolio-showcase-section" id="portfolio-section">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item-header" id="on-start-active-portfolio"><h2>Game & Programming Work</h2></div>
+                    <div class="accordion-item-content">
+                        <div class="accordion-item-content-body">
+                            <div class="portfolio-grid">
+                                <div class="portfolio-item" onclick="location.href='garden-gambit.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/gardengambit/gardengambitcover.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <h4 class="portfolio-piece-title">Garden Gambit</h4>
+                                            <p class="role-description"><span class="bolded">Role:</span> Meta Programmer / C#, Unity</p>
+                                            <p class="portfolio-piece-description">Mobile game with gacha, fusion and upgrading mechanics. Take care of your harvest, build your plant team and fight in the arena!</p>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item" onclick="location.href='little-light.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/littlelight/littlelightcover.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <h4 class="portfolio-piece-title">Little Light</h4>
+                                            <p class="role-description"><span class="bolded">Role:</span> Game Programmer / C#, Unity</p>
+                                            <p class="portfolio-piece-description">ARPG PC game set in the Victorian age. Play and help a grieving father that is willing to do anything to save his last child!</p>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item" onclick="location.href='github-explorer.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/githubexplorer/githubexplorercover.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <h4 class="portfolio-piece-title">GitHub Explorer</h4>
+                                            <p class="role-description"><span class="bolded">Solo</span> project / C#, REST API</p>
+                                            <p class="portfolio-piece-description">View GitHub users, organizations, repositories and create and commit issues directly from the IDE console. Done with TCP-client and Github’s public REST API’s.</p>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item" onclick="location.href='procedural-dungeon.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/proceduraldungeon/proceduraldungeoncover.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <h4 class="portfolio-piece-title">Procedural Generation</h4>
+                                            <p class="role-description"><span class="bolded">Role:</span> Programmer / C#, Unity</p>
+                                            <p class="portfolio-piece-description">Endlessly procedurally generate new dungeon rooms while maintaining game designers ability to control the outcome.</p>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item" onclick="location.href='web-crawler.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/webcrawler/webcrawler.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <h4 class="portfolio-piece-title">Web Crawler</h4>
+                                            <p class="role-description"><span class="bolded">Solo</span> project / C#, TCP-client, HTTP 1.1 requests</p>
+                                            <p class="portfolio-piece-description">Navigate a website and read it's information directly in the IDE console.</p>
+                                            <p>Read More</p>
+                                        </div>                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header"><h2>Graphic Design Work</h2></div>
+                    <div class="accordion-item-content">
+                        <div class="accordion-item-content-body">
+                            <div class="portfolio-grid">
+                                <div class="portfolio-item" onclick="location.href='virtuoso-pitch-deck.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/virtuoso/virtuosocover.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <h4 class="portfolio-piece-title">Virtuoso Pitch Deck</h4>
+                                            <p class="role-description"><span class="bolded">Role:</span> Graphic design, Layout / Google slides, Photoshop</p>
+                                            <p class="portfolio-piece-description">Graphic design and layout for Virtuosos pitch deck presented to Oculus VR.</p>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item" onclick="location.href='house-of-cards.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/escaperoom/houseofcardscover.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <h4 class="portfolio-piece-title">House of Cards</h4>
+                                            <p class="role-description"><span class="bolded">Role:</span> Graphic Design, Puzzle Maker / Photoshop, Illustrator</p>
+                                            <p class="portfolio-piece-description">Fully playable IRL escape room challenge created for other students to play at Forsbergs Skola.</p>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item" onclick="location.href='iconic.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/iconic/iconiccover.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <h4 class="portfolio-piece-title">Iconic</h4>
+                                            <p class="role-description"><span class="bolded">Solo</span> project / Photoshop, XD</p>
+                                            <p class="portfolio-piece-description">App prototype design and wireframing for customizing home screen icons.</p>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item" onclick="location.href='nsph-stockholm.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/nsphstockholm/nsphcover.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <div class="portfolio-thumbnail-text-container">
+                                                <h4 class="portfolio-piece-title">NSPH Stockholm</h4>
+                                                <p class="role-description"><span class="bolded">Role:</span> Web Dev, Graphic Design / Wordpress, Elementor, CSS/HTML</p>
+                                                <p class="portfolio-piece-description">Re-branding of NSPH Stockholm, new website, logo and roll-up design.</p>
+                                                <p>Read More</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item" onclick="location.href='chat-app.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/chatapp/chatappcover.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <h4 class="portfolio-piece-title">Chat App</h4>
+                                            <p class="role-description"><span class="bolded">Role:</span> Graphic Design / Illustrator, XD</p>
+                                            <p class="portfolio-piece-description">Prototype design and wireframing for a new group project chat solution for students at Luleå University of Technology.</p>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-item" onclick="location.href='vaga-prata.html'">
+                                    <div class="portfolio-item-content">
+                                        <img src="images/portfolioprojects/vagaprata/vagapratacover.jpg" alt="portfolio-name-image">
+                                        <div class="portfolio-thumbnail-text-container">
+                                            <h4 class="portfolio-piece-title">Våga Prata</h4>
+                                            <p class="role-description"><span class="bolded">Role:</span> Social Media Manager, Web Master / Wordpress, Photoshop</p>
+                                            <p class="portfolio-piece-description">Project assistant and social media manager.</p>
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about-section">
+            <div class="section-content-container">
+                <div class="about-item">
+                    <h1>About me.</h1>
+                    <p>I’m 24 years old and lives in Stockholm. I’ve been studying Game Programming at Forsbergs Skola since the fall of 2021. I’m passionate about kind-hearted games and my goal is to be a part of developing games for target audiences beyond the stereotypical gamer. My favorite games are Planet Zoo, Teamfight Tactics, Candy Crush, and Equestrian the Game.
+                        <br><br>
+                       Besides playing games I’ve always had an interest in graphic design, creating layouts and photo editing. For many years horse photography was a big hobby of mine.</p>
+                    <h1 id="talkheadline">Let's talk!</h1>
+                    <p>Email me at
+                        <a href="mailto:example5&#64;heartinternet&#46;uk">
+                            jasmine.ohlin&#64;gmail&#46;com</a>, or feel free to reach out on LinkedIn.</p>
+                    <div class="btn-container">
+                        <button class="rounded-btn" onclick="window.open('https://www.linkedin.com/in/jasmine-%C3%B6hlin-712840209/')">View CV</button>
+                        <button class="intro-button" id="linkedin-button" onclick="window.open('https://www.linkedin.com/in/jasmine-%C3%B6hlin-712840209/')"></button>
+                        <button class="intro-button" id="github-button"></button>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <h1>Skills.</h1>
+                    <p><b>Languages:</b> C#, C++, HTML, CSS, Vanilla JavaScript.
+                        <br><br>
+                        <b>Softwares:</b> Unity Engine, Jetbrains Rider, Visual Studio, Photoshop, Illustrator, Indesign, XD.
+                        <br><br>
+                        <b>Soft skills:</b> Communicative, attention to details, eager to learn, honest and persistant.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    </body>
+</html>
