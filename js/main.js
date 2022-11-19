@@ -42,3 +42,7 @@ function onMenuClick() {
     var menuBtn = document.getElementById("menu-btn");
     menuBtn.classList.toggle(responsive_class_name);
 }
+
+const linkedClicked = e => {
+    onMenuClick();
+}
