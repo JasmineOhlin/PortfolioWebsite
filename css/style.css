@@ -17,7 +17,6 @@
     --clr-text: #000;
     --clr-primary: #F6DFE1;
     --clr-accent: #EE6983;
-    --clr-details: #F7969E;
     --clr-light: #FFFFFF;
     
     --ff-title: "sofia-pro";
@@ -145,7 +144,7 @@ nav a:hover{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    filter: invert(59%) sepia(22%) saturate(4645%) hue-rotate(310deg) brightness(100%) contrast(87%);
+    filter: invert(52%) sepia(49%) saturate(1327%) hue-rotate(312deg) brightness(102%) contrast(87%);
 }
 
 #menu-btn-container {
@@ -362,7 +361,7 @@ nav a:hover{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    filter: invert(61%) sepia(76%) saturate(388%) hue-rotate(308deg) brightness(105%) contrast(94%);
+    filter: invert(52%) sepia(49%) saturate(1327%) hue-rotate(312deg) brightness(102%) contrast(87%);
     transition: 0.4s;
 }
 
@@ -372,7 +371,7 @@ nav a:hover{
 
 button {
     width: calc(50px + 8vw);
-    background-color: var(--clr-details);
+    background-color: var(--clr-accent);
     color: var(--clr-light);
     font-family: var(--ff-serif);
     padding: 0.5rem 0;
